@@ -41,7 +41,12 @@ class MyProfile extends Component {
               onChange={(e) => this.handleFieldChange("gender", e)}
               className="form-control"
               id="gender"
+              list="sexlist"
             />
+            <datalist id="sexlist">
+                <option>male</option>
+                <option>female</option>
+            </datalist>
           </div>
           <div className="form-group">
             <label htmlFor="description">Description</label>
